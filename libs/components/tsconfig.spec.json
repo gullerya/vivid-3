@@ -8,7 +8,7 @@
   },
   "exclude": [
     "**/*.config.spec.ts",
-    "**/*.pw.spec.ts",
+    "**/*.pwspec.ts"
   ],
   "include": [
     "**/*.spec.ts",
