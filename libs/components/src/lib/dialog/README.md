@@ -19,6 +19,118 @@ All native attributes of `dialog` are supported as well as some enhancements.
 <vwc-dialog icon="info" headline="Headline" subtitle="subtitle" open></vwc-dialog>
 ```
 
+## Checkups for spacing:
+
+
+```html preview
+<style>
+  html { /* for demo purposes */
+    block-size: 500px;
+  }
+</style>
+
+<vwc-dialog open headline="Dialog Content">
+  <div slot="body">
+    <form>
+      <vwc-layout column-basis="block">
+        <vwc-text-field label="Name"></vwc-text-field>
+        <vwc-text-field label="Password" type="password"></vwc-text-field>
+      </vwc-layout>
+    </form>
+  </div>
+    <div slot="footer" class="demo-footer">
+    <vwc-button appearance="outlined" label="Cancel"></vwc-button>
+    <vwc-button appearance="filled" label="Action"></vwc-button>
+  </div>
+</vwc-dialog>
+```
+
+```html preview
+<style>
+  html { /* for demo purposes */
+    block-size: 500px;
+  }
+</style>
+<vwc-dialog open icon-placement="side" icon="info" headline="Dialog Headline" subtitle="subtitle content">
+  <div slot="body">
+    <form>
+      <vwc-layout column-basis="block">
+        <vwc-text-field label="Name"></vwc-text-field>
+        <vwc-text-field label="Password" type="password"></vwc-text-field>
+      </vwc-layout>
+    </form>
+  </div>
+    <div slot="footer" class="demo-footer">
+    <vwc-button appearance="outlined" label="Cancel"></vwc-button>
+    <vwc-button appearance="filled" label="Action"></vwc-button>
+  </div>
+</vwc-dialog>
+
+```
+
+```html preview
+<style>
+  html { /* for demo purposes */
+    block-size: 450px;
+  }
+  vwc-progress {
+    margin-block-end: 24px;
+    display: block;
+  }
+</style>
+<vwc-dialog open icon-placement="side" icon="info" headline="Dialog Headline" full-body>
+  <div slot="body">
+  <vwc-progress min="0" max="50" value="12.5" shape="sharp" connotation="pacific"></vwc-progress>
+  <vwc-layout column-basis="block" gutters="medium-inline">
+    <form>
+      <vwc-layout column-basis="block">
+        <vwc-text-field label="Name"></vwc-text-field>
+        <vwc-text-field label="Password" type="password"></vwc-text-field>
+        <vwc-button appearance="filled" label="Action"></vwc-button>
+      </vwc-layout>
+    </form>
+    </vwc-layout>
+</vwc-dialog>
+
+```
+
+```html preview
+<style>
+  html { /* for demo purposes */
+    block-size: 450px;
+  }
+  .demo-footer {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 8px;
+  }
+</style>
+<vwc-dialog open icon-placement="side" icon="info" headline="Dialog Headline" full-body>
+  <div slot="body">
+  <vwc-layout column-basis="block" gutters="medium-inline" style="margin-block-end: 12px; display: block;">
+  <vwc-breadcrumb>
+  <vwc-breadcrumb-item href="#" text="breadcrumb"></vwc-breadcrumb-item>
+  <vwc-breadcrumb-item text="breadcrumb"></vwc-breadcrumb-item>
+</vwc-breadcrumb>
+</vwc-layout>
+  <vwc-divider></vwc-divider>
+  <vwc-layout column-basis="block" gutters="medium-inline" column-spacing="small" style="display: block;  margin-block-start: 12px;">
+    <p style="margin: 0;">Choose a VR to apply from the list below</p>
+    <p style="margin: 0;">Choose the Virtual Receptionists this schedule should be applied to</p>
+    <vwc-text-field label="Name"></vwc-text-field>
+  </vwc-layout>
+  </div>
+  <div slot="footer" class="demo-footer" stlye="margin-top: 8px;">
+    <vwc-button appearance="outlined" label="Cancel"></vwc-button>
+    <vwc-button appearance="filled" label="Action"></vwc-button>
+  </div>
+</vwc-dialog>
+
+```
+
+
+
+
 ## Members
 
 ### Headline
