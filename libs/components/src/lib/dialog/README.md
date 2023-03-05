@@ -9,18 +9,7 @@ All native attributes of `dialog` are supported as well as some enhancements.
 </script>
 ```
 
-```html preview
-<style>
-  html { /* for demo purposes */
-    block-size: 230px;
-  }
-</style>
-
-<vwc-dialog icon="info" headline="Headline" subtitle="subtitle" open></vwc-dialog>
-```
-
 ## Checkups for spacing:
-
 
 ```html preview
 <style>
