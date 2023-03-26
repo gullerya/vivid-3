@@ -115,3 +115,13 @@ That means that:
 <vwc-text-area rows="2" value="2 rows text area"></vwc-text-area>
 <vwc-text-area rows="3" value="3 rows text area"></vwc-text-area>
 ```
+
+## Use-case
+### text-area width
+you can set width on the text-area :host
+
+```html preview
+<div style="width: 500px">
+<vwc-text-area label="Label" rows="2" value="This is the text we want to see!" style="width: 100%;"></vwc-text-area>
+</div>
+```
